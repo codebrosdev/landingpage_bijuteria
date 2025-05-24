@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #e3e1dd;
+  color: #333;
+}
+header {
+  position: relative;
+  background: url('https://img.freepik.com/fotos-gratis/bracos-de-mulher-usando-joias-de-ouro_23-2149640599.jpg?semt=ais_hybrid&w=740') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+header::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+header * {
+  position: relative;
+  z-index: 1;
+}
+header h1 {
+  z-index: 100000;
+  font-size: 24px;
+}
+header p {
+  z-index: 10000;
+  margin: 5px 0;
+}
+.btn {
+  z-index: 100000;
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+}
+.catalogo, .produtos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.item {
+  padding: 10px;
+  border-radius: 8px;
+}
+.item img {
+  width: 100%;
+  border-radius: 4px;
+}
+.item p {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.sobre {
+  position: relative;
+  background: url("./corrente-gif.gif") center/cover no-repeat;
+  color: white;
+  padding: 30px 20px;
+  overflow: hidden;
+}
+.sobre::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 0;
+}
+.sobre * {
+  position: relative;
+  z-index: 1;
+}
+.sobre p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.btn-dark {
+  margin: 30px auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+.btn-dark-back-transparent{
+  background-color: transparent;
+  font-weight: bold;
+  border: 2px solid #333;
+  font-size: 12px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-dark-back-transparent:hover{
+  background-color: #33333333;
+  transition: all 0.3s ease-in-out;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+small{
+  color: #5a5a5abb;
+}
+.section .produtos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.section .produtos .item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section .produtos .item img{
+  width: 50% !important;
+}
+.section .produtos .item .text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
